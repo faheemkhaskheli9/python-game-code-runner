@@ -1,0 +1,5 @@
+[project]
+name = "python-game-code-runner"
+version = "0.1.0"
+description = "2D Python Game Coding Environment"
+requires-python = ">=3.10"
