@@ -3,3 +3,18 @@ name = "python-game-code-runner"
 version = "0.1.0"
 description = "2D Python Game Coding Environment"
 requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+# Phase 2 game engine.
+engine = ["pygame>=2.5"]
+# Phase 3 backend.
+web = ["django>=4.2"]
+dev = ["pytest>=7.4"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.setuptools]
+packages = ["src"]

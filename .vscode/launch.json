@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Code Runner: run safe example",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.main",
+      "args": ["run", "--file", "examples/safe_moves.py"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Code Runner: run blocked example",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.main",
+      "args": ["run", "--file", "examples/blocked_escape.py"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Code Runner: pytest",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["tests/", "-v"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
